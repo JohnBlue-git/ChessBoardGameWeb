@@ -1,0 +1,27 @@
+<div class="chess-board">
+  <div
+    class="board-row"
+    [style.width.px]="cellWidth"
+    [style.height.px]="cellHeight"
+    *ngFor="let row of board; let i = index"
+  >
+    <div
+      class="cell"
+      [style.font-size.px]="cellFrontSize"
+      (window:resize)="onResize($event)"
+      *ngFor="let cell of row; let j = index"
+      (click)="placeChess(i, j)"
+    >
+      {{ cell }}
+    </div>
+  </div>
+</div>
+
+<div class="game-result">
+  <h4 class="line">Game {{ gameStateStr }}</h4>
+  <button (click)="resetGame()">Restart Game</button>
+  <h4 class="line">Winner List:</h4>
+  <div class="line" *ngIf="winners$ | async as list">
+    <div *ngFor="let name of list; let i = index">{{ i + 1 }}:{{ name }}</div>
+  </div>
+</div>

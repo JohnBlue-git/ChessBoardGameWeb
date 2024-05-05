@@ -1,0 +1,28 @@
+/* global styles to this file */
+/* which can also import css styles from outside */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  /*background-color: #008b8b;*/
+}
+:root {
+  --primary-color: #605dc8;
+  --secondary-color: #8b89e6;
+  --accent-color: #e8e7fa;
+  --shadow-color: #e8e8e8;
+}
+
+button.primary {
+  padding: 10px;
+  border: solid 1px var(--primary-color);
+  background: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+}
