@@ -1,8 +1,8 @@
 # ChessBoardGameWeb
 a game website with 3 types of chess game crafted by Angular
 
-# Demonstrate via ...
-https://stackblitz.com/github.com/JohnBlue-git/ChessBoardGameWeb/e/main/](https://github.com/JohnBlue-git/ChessBoardGameWeb)
+# Demonstration via stackblitz
+https://stackblitz.com/github.com/JohnBlue-git/ChessBoardGameWeb
 
 # How to start program
 enter root of folder
